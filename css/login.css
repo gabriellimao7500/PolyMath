@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Baloo 2', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header{
+    background: #07BEB8;
+    height: 60px;
+    
+}
+
+.logo-login {
+    margin-left: 25px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    background: #07BEB8;
+    height: 60px;
+    margin: auto;
+}
+
+main{
+    height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 455px;
+    height: 485px;
+    border: solid 1px #07BEB8;
+    border-radius: 15px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.input {
+    display: flex;
+    margin: 35px;
+    border-bottom: solid 2px #07BEB8;
+}
+
+.btn-login {
+    font-family: 'Baloo 2', sans-serif;
+    background: #c1eaea;
+    font-size: 20px;
+    width: 135px;
+    border: solid 1px #07BEB8;
+    border-radius: 5px;
+}
+
+span{
+    color: #07BEB8;
+}
+
+.card-login a {
+    color: black;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+.card-login h1{
+    color: #07BEB8;
+    font-size: 40px;
+}
+
+.input input{
+    border: none;
+    margin-left: 10px;
+    background-color: transparent;
+    outline: none;
+    
+}
