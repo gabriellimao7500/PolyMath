@@ -28,14 +28,14 @@ h5{
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    border: 2px solid rgba(0, 0, 0, 0.30);
+    border: 2px solid #b2b2b2;
     z-index: 1;
 }
 
 .line-module{
     width: 2px;
     height: 100px;
-    background: rgba(0, 0, 0, 0.30);
+    background: #b2b2b2;
 }
 
 .lessons{
@@ -66,22 +66,26 @@ h5{
     background-size: 100%;
 }
 
-
-.uncomplete-module{
-    border: none;
-}
-
 .line-on{
     width: 2px;
     height: 0px;
-    background: #0a8552;
+    background: #0EBE75;
     animation: lines 1s linear;
     z-index: 5;
 }
 
+.line-full{
+    height: 100%;
+}
+
+.complete{
+    border: #0EBE75 3px solid;
+}
+
 .complete-module{
-    width: 99%;
+    width: 500px;
     height: 0px;
+    position: fixed;
     margin-bottom: -4px;
     border-radius: 5px;
     animation: module 1s linear;
@@ -90,7 +94,7 @@ h5{
     border-right: 4px solid#0EBE75;
     z-index: 10;
 }
-
+ 
 @keyframes module {
     0%{
         height: 0px;
