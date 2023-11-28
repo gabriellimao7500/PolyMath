@@ -5,6 +5,8 @@ if(isNaN == aulaAtual || aulaAtual == null){
 }
 */
 
+
+
 const res1 = document.querySelector(".op1")
 const res2 = document.querySelector(".op2")
 const res3 = document.querySelector(".op3")
@@ -86,6 +88,10 @@ res1.addEventListener("click", () => {
         quest ++
         verify()
         correct()
+    }else{
+        quest ++
+        verify()
+        incorrect()
     }
 })
 
@@ -96,11 +102,15 @@ res3.addEventListener("click", () => {
         quest ++
         verify()
         correct()
+    }else{
+        quest ++
+        verify()
+        incorrect()
     }
 
 })
 
-
+var respCerto = 100;
 
 function correct(){
     const bar = document.createElement('div')
@@ -109,12 +119,16 @@ function correct(){
     setTimeout(() => {
         bar.classList.add('right')
     }, 0.2);
+    if(respCerto < 150){
+        respCerto += 25
+    }
 }
 
 function incorrect(){
     const bar = document.createElement('div')
     bar.className = 'progress'
     container.appendChild(bar)
+    respCerto -= 25
     setTimeout(() => {
         bar.classList.add('wrong')
     }, 0.2);
