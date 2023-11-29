@@ -74,10 +74,12 @@ h5{
 .line-on{
     width: 2px;
     height: 0px;
-    background: #0a8552;
+    background: #0EBE75;
     animation: lines 1s linear;
     z-index: 5;
 }
+
+
 
 .complete-module{
     width: 99%;
@@ -89,6 +91,12 @@ h5{
     border-left: 4px solid#0EBE75;
     border-right: 4px solid#0EBE75;
     z-index: 10;
+}
+
+.complete{
+    border: 4px #0EBE75 solid;
+    height: 350px;
+    margin-bottom: -355px;
 }
 
 @keyframes module {

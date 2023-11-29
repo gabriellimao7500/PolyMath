@@ -1,4 +1,4 @@
-var aulaAtual = 9/*localStorage.getItem(aulaAtual);
+var aulaAtual = 1/*localStorage.getItem(aulaAtual);
 if(isNaN == aulaAtual || aulaAtual == null){
     localStorage.setItem(aulaAtual,1);
     aulaAtual = localStorage.getItem(aulaAtual);
@@ -18,6 +18,8 @@ var quest = 1;
 
 const resp = document.querySelector(".ask");
 const container = document.querySelector(".progressbar")
+
+
 
 if(aulaAtual == 1){
     verify()
@@ -68,6 +70,13 @@ if(aulaAtual == 1){
             res1.innerHTML = "Crescente";  //resposta certa
 
             res2.innerHTML = "Decrescente";  //resposta errada
+        }
+        if(quest == 6){
+            localStorage.setItem("aula",1)
+            console.log( localStorage.getItem("aula"))
+            setTimeout(() => {
+                window.location.href = "../index.html"
+            }, 1000);
 
         }
     }
