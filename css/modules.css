@@ -103,6 +103,7 @@ h5{
     border: 4px #0EBE75 solid;
     height: 350px;
     margin-bottom: -355px;
+    border-radius: 5px;
 }
 
 @keyframes module {

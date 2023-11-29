@@ -1,10 +1,8 @@
-var aulaAtual = 9/*localStorage.getItem(aulaAtual);
+var aulaAtual = localStorage.getItem("aulaAtual");
 if(isNaN == aulaAtual || aulaAtual == null){
-    localStorage.setItem(aulaAtual,1);
-    aulaAtual = localStorage.getItem(aulaAtual);
+    localStorage.setItem("aulaAtual",1);
+    aulaAtual = localStorage.getItem("aulaAtual");
 }
-*/
-
 
 
 const res1 = document.querySelector(".op1")

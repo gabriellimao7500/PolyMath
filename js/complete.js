@@ -18,11 +18,8 @@ if(isNaN == i || i == null){
     localStorage.setItem("AtuModulo",0);
     i = localStorage.getItem("AtuModulo");
 }
-console.log(i)
 
 var aulaCompleta = localStorage.getItem("aula")
-
-console.log(aulaCompleta)
 
 
 if(aulaCompleta == 1){
