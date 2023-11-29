@@ -82,7 +82,7 @@ if(aulaAtual == 1){
             res2.innerHTML = "Decrescente";  //resposta errada
         }
             if(quest == 6){
-        localStorage.setItem("numAulaCompl",1)
+        localStorage.setItem("numAulaCompl",2)
         setTimeout(() => {
             window.location.href = "main.html"
         }, 50);
@@ -175,7 +175,7 @@ if(aulaAtual == 2){
 
         }
         if(quest == 6){
-            localStorage.setItem("numAulaCompl",2)
+            localStorage.setItem("numAulaCompl",3)
             setTimeout(() => {
                 window.location.href = "main.html"
             }, 50);
@@ -268,7 +268,7 @@ if(aulaAtual == 3){
         if(quest == 6){
             localStorage.setItem("aula",1)
             localStorage.setItem("AtuModulo",1);
-            localStorage.setItem("numAulaCompl",3)
+            localStorage.setItem("numAulaCompl",4)
             setTimeout(() => {
                 window.location.href = "main.html"
             }, 50);
@@ -356,7 +356,7 @@ if(aulaAtual == 4){
             res6.innerHTML = "Nenhuma das alternativas";  //resposta errada
         }
         if(quest == 6){
-            localStorage.setItem("numAulaCompl",4)
+            localStorage.setItem("numAulaCompl",5)
             setTimeout(() => {
                 window.location.href = "main.html"
             }, 50);
@@ -440,7 +440,7 @@ if(aulaAtual == 5){
             res6.innerHTML = "Nenhuma das alternativas";  //resposta errada
         }
         if(quest == 6){
-            localStorage.setItem("numAulaCompl",5)
+            localStorage.setItem("numAulaCompl",6)
             setTimeout(() => {
                 window.location.href = "main.html"
             }, 50);
@@ -537,7 +537,7 @@ if(aulaAtual == 6){
         if(quest == 6){
             localStorage.setItem("aula",1)
             localStorage.setItem("AtuModulo",3);
-            localStorage.setItem("numAulaCompl",6)
+            localStorage.setItem("numAulaCompl",7)
             setTimeout(() => {
                 window.location.href = "main.html"
             }, 50);
@@ -635,7 +635,7 @@ if(aulaAtual == 7){
 
         }
         if(quest == 6){
-            localStorage.setItem("numAulaCompl",7)
+            localStorage.setItem("numAulaCompl",8)
             setTimeout(() => {
                 window.location.href = "main.html"
             }, 50);
@@ -731,7 +731,7 @@ if(aulaAtual == 8){
 
         }
         if(quest == 6){
-            localStorage.setItem("numAulaCompl",8)
+            localStorage.setItem("numAulaCompl",9)
             setTimeout(() => {
                 window.location.href = "main.html"
             }, 50);
@@ -829,7 +829,7 @@ if(aulaAtual == 9){
         if(quest == 6){
             localStorage.setItem("aula",1)
             localStorage.setItem("AtuModulo",5);
-            localStorage.setItem("numAulaCompl",9)
+            localStorage.setItem("numAulaCompl",10)
             setTimeout(() => {
                 window.location.href = "main.html"
             }, 50);

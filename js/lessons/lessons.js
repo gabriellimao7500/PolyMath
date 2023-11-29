@@ -8,14 +8,13 @@ const aula7 = document.querySelector(".A7")
 const aula8 = document.querySelector(".A8")
 const aula9 = document.querySelector(".A9")
 
-
 var aulaAtual = localStorage.getItem("numAulaCompl");
 if(isNaN == aulaAtual || aulaAtual == null){
     localStorage.setItem("numAulaCompl",1);
     aulaAtual = localStorage.getItem("numAulaCompl");
 }
 
-
+console.log(aulaAtual)
 
 
 aula1.addEventListener("click", () => {
