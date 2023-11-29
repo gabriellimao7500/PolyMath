@@ -21,7 +21,7 @@ console.log(aulaCompleta)
 //if(aulaCompleta == 1){
 teste.addEventListener("click", () => {
     if(i == 0){
-        setTimeout(colorOne,1060)
+        setTimeout(colorOne,1100)
         moduleOne.classList.toggle("complete-module")
         function colorOne(){
             moduleOne.classList.toggle("complete")
@@ -31,7 +31,7 @@ teste.addEventListener("click", () => {
         }
     }
     if(i == 1){
-        setTimeout(colorTwo,1060)
+        setTimeout(colorTwo,1100)
         moduleTwo.classList.toggle("complete-module")
         function colorTwo(){
             Two.classList.toggle("complete")
@@ -42,7 +42,7 @@ teste.addEventListener("click", () => {
         }
     }
     if(i == 2){
-        setTimeout(colorOne,1060)
+        setTimeout(colorOne,1100)
         moduleOne.classList.toggle("complete-module")
         function colorOne(){
             One.classList.toggle("complete")
