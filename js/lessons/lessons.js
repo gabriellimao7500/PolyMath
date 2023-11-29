@@ -8,16 +8,91 @@ const aula7 = document.querySelector(".A7")
 const aula8 = document.querySelector(".A8")
 const aula9 = document.querySelector(".A9")
 
-var aulaAtual = localStorage.getItem("aulaAtual");
+
+var aulaAtual = localStorage.getItem("numAulaCompl");
 if(isNaN == aulaAtual || aulaAtual == null){
-    localStorage.setItem("aulaAtual",1);
-    aulaAtual = localStorage.getItem("aulaAtual");
+    localStorage.setItem("numAulaCompl",1);
+    aulaAtual = localStorage.getItem("numAulaCompl");
 }
+
+
 
 
 aula1.addEventListener("click", () => {
     if(aulaAtual > 0){
         localStorage.setItem("aulaAtual",1);
+        setTimeout(() => {
+            window.location.href = "lesson.html"
+        }, 200);
+    }
+
+})
+aula2.addEventListener("click", () => {
+    if(aulaAtual > 1){
+        localStorage.setItem("aulaAtual",2);
+        setTimeout(() => {
+            window.location.href = "lesson.html"
+        }, 200);
+    }
+
+})
+aula3.addEventListener("click", () => {
+    if(aulaAtual > 2){
+        localStorage.setItem("aulaAtual",3);
+        setTimeout(() => {
+            window.location.href = "lesson.html"
+        }, 200);
+    }
+
+})
+aula4.addEventListener("click", () => {
+    if(aulaAtual > 3){
+        localStorage.setItem("aulaAtual",4);
+        setTimeout(() => {
+            window.location.href = "lesson.html"
+        }, 200);
+    }
+
+})
+aula5.addEventListener("click", () => {
+    if(aulaAtual > 4){
+        localStorage.setItem("aulaAtual",5);
+        setTimeout(() => {
+            window.location.href = "lesson.html"
+        }, 200);
+    }
+
+})
+aula6.addEventListener("click", () => {
+    if(aulaAtual > 5){
+        localStorage.setItem("aulaAtual",6);
+        setTimeout(() => {
+            window.location.href = "lesson.html"
+        }, 200);
+    }
+
+})
+aula7.addEventListener("click", () => {
+    if(aulaAtual > 6){
+        localStorage.setItem("aulaAtual",7);
+        setTimeout(() => {
+            window.location.href = "lesson.html"
+        }, 200);
+    }
+
+})
+aula8.addEventListener("click", () => {
+    if(aulaAtual > 7){
+        localStorage.setItem("aulaAtual",8);
+        setTimeout(() => {
+            window.location.href = "lesson.html"
+        }, 200);
+    }
+
+})
+aula9.addEventListener("click", () => {
+    if(aulaAtual > 8){
+        localStorage.setItem("aulaAtual",9);
         setTimeout(() => {
             window.location.href = "lesson.html"
         }, 200);

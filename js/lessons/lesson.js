@@ -4,6 +4,18 @@ if(isNaN == aulaAtual || aulaAtual == null){
     aulaAtual = localStorage.getItem("aulaAtual");
 }
 
+console.log(aulaAtual)
+
+const aula1 = document.querySelector(".A1")
+const aula2 = document.querySelector(".A2")
+const aula3 = document.querySelector(".A3")
+const aula4 = document.querySelector(".A4")
+const aula5 = document.querySelector(".A5")
+const aula6 = document.querySelector(".A6")
+const aula7 = document.querySelector(".A7")
+const aula8 = document.querySelector(".A8")
+const aula9 = document.querySelector(".A9")
+
 
 const res1 = document.querySelector(".op1")
 const res2 = document.querySelector(".op2")
@@ -12,7 +24,7 @@ const res4 = document.querySelector(".op4")
 const res5 = document.querySelector(".op5")
 const res6 = document.querySelector(".op6")
 
-var quest = 1;
+var quest = 1
 
 const resp = document.querySelector(".ask");
 const container = document.querySelector(".progressbar")
@@ -69,13 +81,14 @@ if(aulaAtual == 1){
 
             res2.innerHTML = "Decrescente";  //resposta errada
         }
-    }
-    if(quest == 6){
-        localStorage.setItem("AtuModulo",1);
+            if(quest == 6){
+        localStorage.setItem("numAulaCompl",1)
         setTimeout(() => {
             window.location.href = "main.html"
         }, 50);
     }
+    }
+
 }
 
 if(aulaAtual == 2){
@@ -160,6 +173,12 @@ if(aulaAtual == 2){
 
             res6.innerHTML = "Nenhuma das alternativas";  //resposta errada
 
+        }
+        if(quest == 6){
+            localStorage.setItem("numAulaCompl",2)
+            setTimeout(() => {
+                window.location.href = "main.html"
+            }, 50);
         }
         
     }
@@ -249,6 +268,7 @@ if(aulaAtual == 3){
         if(quest == 6){
             localStorage.setItem("aula",1)
             localStorage.setItem("AtuModulo",1);
+            localStorage.setItem("numAulaCompl",3)
             setTimeout(() => {
                 window.location.href = "main.html"
             }, 50);
@@ -335,6 +355,12 @@ if(aulaAtual == 4){
 
             res6.innerHTML = "Nenhuma das alternativas";  //resposta errada
         }
+        if(quest == 6){
+            localStorage.setItem("numAulaCompl",4)
+            setTimeout(() => {
+                window.location.href = "main.html"
+            }, 50);
+        }
     }
 }
 
@@ -412,6 +438,12 @@ if(aulaAtual == 5){
             res5.innerHTML = "4º Quadrante"; // resposta certa
 
             res6.innerHTML = "Nenhuma das alternativas";  //resposta errada
+        }
+        if(quest == 6){
+            localStorage.setItem("numAulaCompl",5)
+            setTimeout(() => {
+                window.location.href = "main.html"
+            }, 50);
         }
     }
 }
@@ -505,6 +537,7 @@ if(aulaAtual == 6){
         if(quest == 6){
             localStorage.setItem("aula",1)
             localStorage.setItem("AtuModulo",3);
+            localStorage.setItem("numAulaCompl",6)
             setTimeout(() => {
                 window.location.href = "main.html"
             }, 50);
@@ -601,6 +634,12 @@ if(aulaAtual == 7){
             res6.innerHTML = "para x 5.";  
 
         }
+        if(quest == 6){
+            localStorage.setItem("numAulaCompl",7)
+            setTimeout(() => {
+                window.location.href = "main.html"
+            }, 50);
+        }
     }
 }
 
@@ -690,6 +729,12 @@ if(aulaAtual == 8){
 
             res6.classList.toggle("none");  
 
+        }
+        if(quest == 6){
+            localStorage.setItem("numAulaCompl",8)
+            setTimeout(() => {
+                window.location.href = "main.html"
+            }, 50);
         }
     }
 }
@@ -784,6 +829,7 @@ if(aulaAtual == 9){
         if(quest == 6){
             localStorage.setItem("aula",1)
             localStorage.setItem("AtuModulo",5);
+            localStorage.setItem("numAulaCompl",9)
             setTimeout(() => {
                 window.location.href = "main.html"
             }, 50);

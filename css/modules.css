@@ -61,6 +61,13 @@ h5{
     background-size: 100%;
 }
 
+.complete-img{
+    width: 40px;
+    height: 40px;
+    background: url("../imgs/complete.png");
+    background-size: 100%;
+}
+
 .lock-img{
     width: 40px;
     height: 40px;
