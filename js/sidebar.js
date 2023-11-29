@@ -1,9 +1,8 @@
 const statistics = document.getElementById('statistics')
-const learn = document.querySelector('.learn')
+const learn = document.querySelector('#main')
 const ranking = document.getElementById('ranking')
 const perfil = document.getElementById('perfil')
 const exit = document.querySelector('.off')
-
 
 console.log(learn)
 
@@ -31,14 +30,15 @@ statistics.addEventListener("click", () => {
         window.location.href = "statistics.html"
     }
 })
-
-learn.addEventListener("click", () => {
+function main(){
     setTimeout(ir,400)
     exit.classList.add('off-locate')
     function ir(){
         window.location.href = "main.html"
     }
-})
+}
+
+
 
 
 
