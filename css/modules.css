@@ -38,6 +38,8 @@ h5{
     background: rgba(0, 0, 0, 0.30);
 }
 
+
+
 .lessons{
     position: relative;
     left: -25%;
@@ -79,6 +81,10 @@ h5{
     z-index: 5;
 }
 
+.line-full{
+    height: 100%;
+    background: #0EBE75;
+}
 
 
 .complete-module{

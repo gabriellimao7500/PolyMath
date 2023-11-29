@@ -1,4 +1,4 @@
-var aulaAtual = 1/*localStorage.getItem(aulaAtual);
+var aulaAtual = 9/*localStorage.getItem(aulaAtual);
 if(isNaN == aulaAtual || aulaAtual == null){
     localStorage.setItem(aulaAtual,1);
     aulaAtual = localStorage.getItem(aulaAtual);
@@ -71,14 +71,12 @@ if(aulaAtual == 1){
 
             res2.innerHTML = "Decrescente";  //resposta errada
         }
-        if(quest == 6){
-            localStorage.setItem("aula",1)
-            console.log( localStorage.getItem("aula"))
-            setTimeout(() => {
-                window.location.href = "../index.html"
-            }, 1000);
-
-        }
+    }
+    if(quest == 6){
+        localStorage.setItem("AtuModulo",1);
+        setTimeout(() => {
+            window.location.href = "main.html"
+        }, 50);
     }
 }
 
@@ -165,6 +163,7 @@ if(aulaAtual == 2){
             res6.innerHTML = "Nenhuma das alternativas";  //resposta errada
 
         }
+        
     }
 }
 
@@ -248,6 +247,13 @@ if(aulaAtual == 3){
             res5.classList.toggle("none");
             res6.classList.toggle("none");
 
+        }
+        if(quest == 6){
+            localStorage.setItem("aula",1)
+            localStorage.setItem("AtuModulo",1);
+            setTimeout(() => {
+                window.location.href = "main.html"
+            }, 50);
         }
     }
 }
@@ -497,6 +503,13 @@ if(aulaAtual == 6){
 
             res6.innerHTML = "z=14";  
 
+        }
+        if(quest == 6){
+            localStorage.setItem("aula",1)
+            localStorage.setItem("AtuModulo",3);
+            setTimeout(() => {
+                window.location.href = "main.html"
+            }, 50);
         }
     }
 }
@@ -770,6 +783,13 @@ if(aulaAtual == 9){
             res6.classList.toggle("none");  
 
         }
+        if(quest == 6){
+            localStorage.setItem("aula",1)
+            localStorage.setItem("AtuModulo",5);
+            setTimeout(() => {
+                window.location.href = "main.html"
+            }, 50);
+        }
     }
 }
 
@@ -865,6 +885,7 @@ function correct(){
     }, 0.2);
     if(respCerto < 150){
         respCerto += 25
+        localStorage.setItem("point",respCerto)
     }
 }
 
@@ -872,7 +893,8 @@ function incorrect(){
     const bar = document.createElement('div')
     bar.className = 'progress'
     container.appendChild(bar)
-    respCerto -= 25
+    respCerto -= 20
+    localStorage.setItem("point",respCerto)
     setTimeout(() => {
         bar.classList.add('wrong')
     }, 0.2);

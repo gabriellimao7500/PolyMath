@@ -1,0 +1,1 @@
+const aula1 = document.querySelector("")
