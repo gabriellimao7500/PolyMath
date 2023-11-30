@@ -144,11 +144,13 @@ if(aulaAtual == 10){
     icon9.classList.remove("lock-img")
     icon9.classList.add("complete-img")
 }
+
+
+
 aula1.addEventListener("click", () => {
     if(aulaAtual > 0){
-        localStorage.setItem("aulaAtual",1);
         setTimeout(() => {
-            window.location.href = "lesson.html"
+            window.location.href = "aula-modulo-1.html"
         }, 200);
     }
 
@@ -173,9 +175,8 @@ aula3.addEventListener("click", () => {
 })
 aula4.addEventListener("click", () => {
     if(aulaAtual > 3){
-        localStorage.setItem("aulaAtual",4);
         setTimeout(() => {
-            window.location.href = "lesson.html"
+            window.location.href = "aula-modulo-2.html"
         }, 200);
     }
 
@@ -200,9 +201,8 @@ aula6.addEventListener("click", () => {
 })
 aula7.addEventListener("click", () => {
     if(aulaAtual > 6){
-        localStorage.setItem("aulaAtual",7);
         setTimeout(() => {
-            window.location.href = "lesson.html"
+            window.location.href = "aula-modulo-3.html"
         }, 200);
     }
 
