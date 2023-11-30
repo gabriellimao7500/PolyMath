@@ -145,10 +145,10 @@ if(aulaAtual == 10){
     icon9.classList.add("complete-img")
 }
 
-const warning = document.querySelector(".warning")
+
 
 aula1.addEventListener("click", () => {
-    if(aulaAtual > 0 ){
+    if(aulaAtual > 0){
         setTimeout(() => {
             window.location.href = "aula-modulo-1.html"
         }, 200);

@@ -1,5 +1,5 @@
 a{
-    color: black !important;
+    color: black;
 }
 
 .sidebar{
@@ -160,3 +160,42 @@ span{
     color: orange;
     font-size: 40px;
 }
+
+
+.sidebar-responsive{
+    display: none;
+}
+
+@media (max-width: 890px) {
+    .sidebar-locate{
+        display: none;
+    }
+    .sidebar-title{
+        display: none;
+    }
+    .sidebar-responsive {
+        background-color: #07BEB8;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 8vh;
+        position: relative;
+    }
+
+    .selecionado {
+        margin-bottom: 15px;
+        background-color: aliceblue;
+        border-radius: 14px;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modules{
+        margin-bottom: 2vh;
+    }
+
+}
+
+

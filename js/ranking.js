@@ -1,5 +1,5 @@
     //numero de usuarios
-    const numberOfProfiles = 57;
+    const numberOfProfiles = 10;
 
     const parentElement = document.querySelector('.ranking');
 

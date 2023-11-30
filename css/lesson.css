@@ -99,3 +99,56 @@ main{
     transition: 0.2s ease-in-out;
     background-color: #07BEB8;
 }
+
+h1{
+    color: aliceblue;
+}
+
+@media (max-width: 1220px) {
+    .left{
+        left: calc(50vw - 513px);
+    }
+}
+
+@media (max-width: 1050px) {
+    .logo {
+        display: none;
+    }
+    .left {
+        left: calc(50vw - 300px);
+    }
+}
+
+@media (max-width: 630px) {
+    .game{
+        width: 70%;
+    }
+    .left {
+        left: calc(50vw - 112px);
+    }
+    .progressbar{
+       width: 220px;
+    }
+    .res {
+        font-size: 9px;
+        margin: 3px;
+        max-width: 90px;
+    }
+    .answer{
+        max-width: 315px;
+    }
+    .ask{
+        font-size: 10px;
+        width: 220px;
+ 
+    }
+    .right {
+        width: 45px;
+    }
+    .wrong {
+        width: 45px;
+    }
+
+
+}
+

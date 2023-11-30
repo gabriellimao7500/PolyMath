@@ -92,3 +92,33 @@ span{
     align-items: center;
 }
 
+@media (max-width: 500px) {
+    .card-login{
+        width: 300px;
+        height: 360px;
+
+    }
+    .card-login h1 {
+        font-size: 25px;
+    }
+
+    .input {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 330px) {
+    .card-login {
+        height: 290px;
+        width: 230px;
+        font-size: 10px;
+    }
+    .btn-login {
+        width: 55px;
+        font-size: 20px;
+    }
+    .input {
+        width: 190px;
+    }
+}
+

@@ -167,3 +167,74 @@ body {
         margin-right: 0;    
     }
 }
+
+.sidebar-responsive {
+    display: none;
+}
+
+@media (max-width: 660px) {
+    .sidebar{
+        width: 250px;
+    }
+    .img-title-login{
+        width: 250px;
+        height: 140px;
+    }
+    .perfil-main{
+        width: calc(100vw - 250px);
+    }
+}
+
+@media (max-width: 535px) {
+    .sidebar-locate{
+        display: none;
+    }
+    #principal {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100vw;
+        height: 145px;
+        position: absolute;
+    }
+    .perfil-main{
+        width: 100vw;
+        height: 450px;
+        margin-top: 150px;
+        display: flex;
+    }
+    .perfil{
+        height: 350px;
+    }
+    .sidebar-responsive {
+        background-color: #07BEB8;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 8vh;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        
+    }
+
+    .selecionado {
+        margin-bottom: 15px;
+        background-color: aliceblue;
+        border-radius: 14px;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 280px) {
+    .name-user{
+        font-size: 20px;
+    }
+    
+}

@@ -1,27 +1,26 @@
-const statistics = document.getElementById('statistics')
+
 const learn = document.querySelector('#main')
-const ranking = document.getElementById('ranking')
-const perfil = document.getElementById('perfil')
 const exit = document.querySelector('.off')
 
 console.log(learn)
 
-ranking.addEventListener("click", () => {
+
+function ranking() {
     setTimeout(irranking,400)
     exit.classList.add('off-locate')
     function irranking(){
         window.location.href = "ranking.html"
     }
-})
+}
 
 
-perfil.addEventListener("click", () => {
+function perfil() {
     setTimeout(irperfil,400)
     exit.classList.add('off-locate')
     function irperfil(){
         window.location.href = "perfil.html"
     }
-})
+}
 
 statistics.addEventListener("click", () => {
     setTimeout(irhome,400)
