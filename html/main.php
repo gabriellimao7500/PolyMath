@@ -39,7 +39,6 @@
     <?php 
          echo("<div class="span"><div class="hi"><div class="hello">Olá,</div> <div class="name">$nome</div></div></div>");  
     ?>
-    <div class="warning tp"><div><span>ATENÇÃO!</span> se você quiser continuar você ira perder todo seu progresso a partir da aula selecionada!</div></div>
     <div class="sidebar">
         <div class="sidebar-title">
             <img src="../imgs/LogoIndex.png" alt="" height="195">
