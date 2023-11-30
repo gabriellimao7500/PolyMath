@@ -1,3 +1,27 @@
+<?php 
+    session_start();
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION) == true)){
+            unset($_SESSION['email']);
+            unset($_SESSION['password']);
+            header('Location:../index.php');
+            exit();
+    }
+    include_once('config.php');
+    $email = $_SESSION['email'];
+    $password = $_SESSION['password'];
+    $sql = "SELECT nome FROM usuario WHERE email = '$email' and senha = '$password'";
+    $result = $conexao->query($sql);
+
+    // Verifica se houve resultados antes de tentar extrair dados
+    if ($result) {
+        $row = $result->fetch_assoc();
+        $logado = $row ? $row['nome'] : "Usuário Desconhecido!";
+    } else {
+        // Trata o caso de erro na consulta
+        $logado = "Erro na consulta: " . $conexao->error;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,7 +36,9 @@
     <title>Poly Math</title>
 </head>
 <body>
-    <div class="span"><div class="hi"><div class="hello">Olá,</div> <div class="name">Padre marcelo roci</div></div></div> <!--ola usuario-->
+    <?php 
+         echo("<div class="span"><div class="hi"><div class="hello">Olá,</div> <div class="name">$nome</div></div></div>");  
+    ?>
     <div class="warning tp"><div><span>ATENÇÃO!</span> se você quiser continuar você ira perder todo seu progresso a partir da aula selecionada!</div></div>
     <div class="sidebar">
         <div class="sidebar-title">
